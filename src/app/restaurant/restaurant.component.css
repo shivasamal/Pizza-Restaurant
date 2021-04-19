@@ -1,0 +1,30 @@
+.main-container {
+  margin-left: auto;
+  width: calc(100vw - 235px);
+  height: calc(100vh - 68px);
+  margin-right: 0;
+  padding-left: 15px;
+}
+
+* {
+  font-family: 'DINRegular', 'Lato', Arial, sans-serif;
+}
+
+app-header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 68px;
+}
+
+app-sidebar {
+  position: fixed;
+  left: 0;
+  height: calc(100vh - 68px);
+  top: 86px;
+}
+
+.headerheights {
+  height: 90px;
+  visibility: hidden;
+}

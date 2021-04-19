@@ -1,0 +1,72 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title><h1><strong>Restaurant</strong></h1></mat-card-title>
+  </mat-card-header>
+  <h3 style="text-align: center;"><strong>Invoice#: 052145</strong></h3>
+  <hr class="format" />
+  <h2>Customer Name:</h2><h1><strong>XXXXXX</strong></h1>
+  <hr class="format" />
+  <mat-card-content>
+    <table mat-table [dataSource]="transactions" class="mat-elevation-z8">
+      <!-- Item Column -->
+      <ng-container matColumnDef="item">
+        <th mat-header-cell *matHeaderCellDef> Item </th>
+        <td mat-cell *matCellDef="let transaction"> {{transaction.item}} </td>
+        <td mat-footer-cell *matFooterCellDef><strong>SUB TOTAL</strong>  </td>
+      </ng-container>
+
+      <!-- Quantity Column -->
+      <ng-container matColumnDef="quantity">
+        <th mat-header-cell *matHeaderCellDef> Quantity </th>
+        <td mat-cell *matCellDef="let transaction"> {{transaction.quantity}} </td>
+        <td mat-footer-cell *matFooterCellDef> <strong>{{getTotalQuantity()}}</strong> </td>
+      </ng-container>
+
+      <!-- Cost Column -->
+      <ng-container matColumnDef="cost">
+        <th mat-header-cell *matHeaderCellDef> Cost </th>
+        <td mat-cell *matCellDef="let transaction"> {{transaction.cost}}.00 </td>
+        <td mat-footer-cell *matFooterCellDef> <strong>{{getTotalCost()}}.00</strong> </td>
+      </ng-container>
+
+      <ng-container matColumnDef="tax">
+        <th mat-footer-cell *matFooterCellDef>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TAX </th>
+      </ng-container>
+      <ng-container matColumnDef="blank">
+        <th mat-footer-cell *matFooterCellDef>  </th>
+      </ng-container>
+      <ng-container matColumnDef="taxPercent">
+        <th mat-footer-cell *matFooterCellDef> 0.00 </th>
+      </ng-container>
+
+      <ng-container matColumnDef="total">
+        <th mat-footer-cell *matFooterCellDef>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOTAL </th>
+      </ng-container>
+      <ng-container matColumnDef="blank2">
+        <th mat-footer-cell *matFooterCellDef>  </th>
+      </ng-container>
+      <ng-container matColumnDef="totalBill">
+        <th mat-footer-cell *matFooterCellDef>{{getTotalCost()}}.00 </th>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+      <tr mat-footer-row *matFooterRowDef="['tax', 'blank','taxPercent']"
+          class="example-second-footer-row">
+      </tr>
+      <tr mat-footer-row *matFooterRowDef="['total', 'blank2','totalBill']"
+          class="example-third-footer-row">
+      </tr>
+    </table>
+    <br />
+    <br />
+    <h3><strong>Delivery Address:</strong></h3>
+    <h4>Mannat, Land’s End,<br />Bandstand, Bandra West,<br />Mumbai 400050, Maharashtra,<br />India.</h4>
+    <hr class="format2" />
+    <h4 style="text-align: center;"><strong>Thank You,Visit Again!!!</strong></h4>
+    <hr class="format2" />
+  </mat-card-content>
+</mat-card>
+

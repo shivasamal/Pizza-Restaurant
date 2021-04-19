@@ -1,0 +1,28 @@
+.rightmenulists ul li a {
+  line-height: 50px;
+  color: #fff;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.fixedmenus {
+  box-shadow: 0px 0px 5px #000;
+  background: #d3e0ea !important
+}
+
+.font {
+  font-size: 350%;
+  color: #0a043c;
+  font-family: Algerian;
+}
+
+.rightmenulists ul li.dropmenuinfos a {
+  line-height: normal
+}
+
+.imglogos{
+    width:70px;
+}

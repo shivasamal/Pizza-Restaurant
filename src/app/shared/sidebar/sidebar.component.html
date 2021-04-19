@@ -1,0 +1,22 @@
+<nav class="sidebar navbar d-flex align-items-start">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a matTooltip="Dashboard" tooltipPosition="bottom" routerLink="./dashboard" routerLinkActive="active" class="nav-link">
+        <i class="fas fa-tachometer-alt"></i><span>Dashboard</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a matTooltip="Order Details" tooltipPosition="bottom" [routerLink]="['./order-detls']" routerLinkActive="active" class="nav-link">
+        <i class="fas fa-info-circle"></i><span>Order Details</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a matTooltip="Order Management" tooltipPosition="bottom" [routerLink]="['./order-mngmnt']" routerLinkActive="active" class="nav-link">
+        <i class="fas fa-file-upload"></i><span>Order Management</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+

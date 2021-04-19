@@ -1,0 +1,29 @@
+<div class="fixedmenus">
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar">
+        <div>
+          <a routerLink="/dashboard"><img src="../assets/pizza-logo.jpg" alt="logo" class="imglogos"></a>
+          <strong class="font">&nbsp;Restaurant</strong>
+        </div>
+        <div class="rightmenulists">
+          <ul class="navbar-nav d-flex h-100 align-items-center">
+            <li class="dropdown pr-0">
+              <button mat-button [matMenuTriggerFor]="menu">
+                <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img style="width:50px;background-color: #fff;border-radius: 100%;" src="../assets/user-icon.jpg" alt="user" class="img-fluid">
+                </a>
+              </button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>Change Profile</button>
+                <button mat-menu-item>Change Password</button>
+                <div class="dropdown-divider"></div>
+                <button mat-menu-item>Log Out</button>
+              </mat-menu>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+</div>

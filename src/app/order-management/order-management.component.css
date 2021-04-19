@@ -1,0 +1,14 @@
+table {
+  width: 100%;
+}
+.tableborder {
+  border: #e0e0e0 solid 1px;
+}
+.tableactionsbtns button {
+  margin: 0 5px;
+}
+@media (max-width: 800px) {
+  .tablerspns {
+    overflow: scroll
+  }
+}

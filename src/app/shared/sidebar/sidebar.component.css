@@ -1,0 +1,42 @@
+.sidebar {
+  width: 230px;
+  border: none;
+  overflow-y: auto;
+  background: #1687a7 !important;
+  bottom: 0;
+  overflow-x: hidden;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+}
+
+  .sidebar ul li a {
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 1rem;
+    position: relative;
+    border-radius: .25rem;
+    color: #343a40;
+    white-space: nowrap;
+    transition: all .2s;
+    margin: .1rem 0;
+    color: rgba(255,255,255,0.6);
+    background: none;
+    border: none;
+    font-size: 16px;
+    position: relative;
+  }
+
+    .sidebar ul li a:hover, .sidebar ul li a.active {
+      color: #fff;
+      background: rgba(255,255,255,0.15);
+    }
+
+
