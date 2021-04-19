@@ -26,6 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## There is no database for this project all the data visible is static before running the project in your pc just go throgh the following steps and install required files
 ## Commands to be runned after initial download.
 npm install --save-dev @angular-devkit/build-angular
 
