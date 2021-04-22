@@ -25,7 +25,7 @@ const RES_DATA: RestaurantData[] = [
 })
 
 export class OrderManagementComponent implements OnInit {
-  displayedColumns: string[] = ['position','customerId', 'customerName', 'noofItems','amount','status'];
+  displayedColumns: string[] = ['position','customerId', 'customerName', 'noofItems','amount','status','actions'];
   dataSource = RES_DATA;
 
   constructor() { }
